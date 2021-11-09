@@ -1,0 +1,26 @@
+﻿@model Parcial2.Models.RetiroDinero
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>IndexR</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("IndexR", "RetiroDinero", FormMethod.Post))
+        {
+            <label>Ingrese la cantidad que desea retirar de dinero</label>
+            @Html.TextBoxFor(a => a.monto)
+            <br />
+
+            <input type="submit" />
+        }
+
+    </div>
+</body>
+</html>
